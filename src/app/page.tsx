@@ -142,11 +142,13 @@ export default function Home() {
       <BottomNavigation />
 
       {/* Date Picker Modal */}
-      <DatePickerModal
-        isOpen={isDatePickerOpen}
-        onClose={() => setIsDatePickerOpen(false)}
-        onSelectDate={(date) => setSelectedDate(date)}
-      />
+      {isDatePickerOpen && (
+        <DatePickerModal
+          isOpen={isDatePickerOpen}
+          onClose={() => setIsDatePickerOpen(false)}
+          onSelectDate={(date) => setSelectedDate(date)}
+        />
+      )}
     </div>
   );
 }
