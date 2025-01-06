@@ -108,9 +108,9 @@ export default function Home() {
 
       {/* Date Selector */}
       <div className="px-4 pt-10">
-        <h2 className="text-lg font-semibold mt-4 text-[24px]">აირჩიე დრო</h2>
+        <h2 className=" font-semibold mt-4 text-[24px]">აირჩიე დრო</h2>
         <div className="flex justify-between py-5">
-          <h2 className="text-lg font-normal mt-4 text-[15px]">
+          <h2 className="font-normal mt-4 text-[15px]">
             აირჩიე სასურველი თარიღი
           </h2>
           <button
@@ -125,7 +125,7 @@ export default function Home() {
 
       {/* Time Selector */}
       <div className="px-4 min-h-[350px]">
-        <h2 className="text-lg font-normal text-[15px] mt-4">აირჩიე საათი</h2>
+        <h2 className=" font-normal text-[15px] mt-4">აირჩიე საათი</h2>
         <TimeSelector
           times={times}
           onSelect={(time: any) => setSelectedTime(time.time)}

@@ -703,7 +703,7 @@ function Home() {
                 className: "px-4 pt-10",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                        className: "text-lg font-semibold mt-4 text-[24px]",
+                        className: " font-semibold mt-4 text-[24px]",
                         children: "აირჩიე დრო"
                     }, void 0, false, {
                         fileName: "[project]/src/app/page.tsx",
@@ -714,7 +714,7 @@ function Home() {
                         className: "flex justify-between py-5",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                                className: "text-lg font-normal mt-4 text-[15px]",
+                                className: "font-normal mt-4 text-[15px]",
                                 children: "აირჩიე სასურველი თარიღი"
                             }, void 0, false, {
                                 fileName: "[project]/src/app/page.tsx",
@@ -761,7 +761,7 @@ function Home() {
                 className: "px-4 min-h-[350px]",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                        className: "text-lg font-normal text-[15px] mt-4",
+                        className: " font-normal text-[15px] mt-4",
                         children: "აირჩიე საათი"
                     }, void 0, false, {
                         fileName: "[project]/src/app/page.tsx",
