@@ -42,8 +42,8 @@ const DatePickerModal: React.FC<DatePickerModalProps> = ({
     >
       <div className="bg-white rounded-[20px] w-[85%] max-w-md  mx-auto pb-4">
         {/* Header */}
-        <div className="flex justify-between items-center mb-4 border-b  border-gray p-4">
-          <h2 className="text-lg font-bold">აირჩიე თარიღი</h2>
+        <div className="flex justify-between items-center mb-4 border-b  border-gray p-3">
+          <h2 className="text-lg font-semibold text-[16px]">აირჩიე თარიღი</h2>
           <button
             onClick={onClose}
             className="text-black shadow w-[32px] h-[32px] rounded-full transition-colors duration-300 hover:bg-gray-100"
@@ -55,7 +55,7 @@ const DatePickerModal: React.FC<DatePickerModalProps> = ({
           <button className="mr-[15px] ml-[15px] ">
             <img src="/left.png" />
           </button>
-          <p>ოქტომბერი</p>
+          <p className="font-bold text-[14px]">ოქტომბერი 2024</p>
           <button className="mr-[15px] ml-[15px]">
             <img src="/right.png" />
           </button>
@@ -64,7 +64,7 @@ const DatePickerModal: React.FC<DatePickerModalProps> = ({
         {/* Calendar */}
         <div className="grid grid-cols-7 gap-2 text-center text-sm p-4">
           {["ორშ", "სამ", "ოთხ", "ხუთ", "პარ", "შაბ", "კვ"].map((day) => (
-            <span key={day} className="font-bold text-gray-500">
+            <span key={day} className="font-normal text-[#0F172A] text-[12px]">
               {day}
             </span>
           ))}
@@ -83,8 +83,10 @@ const DatePickerModal: React.FC<DatePickerModalProps> = ({
                   : "bg-white transition-colors duration-300 hover:bg-gray-200"
               }`}
             >
-              <div>{new Date(date).getDate()}</div>
-              <div className="text-xs text-gray-500 ">{num}</div>
+              <p className="font-semibold text-[12px] leading-[13px]">
+                {new Date(date).getDate()}
+              </p>
+              <p className="font-light text-[8px] leading-[9px]">{num}</p>
             </button>
           ))}
         </div>
@@ -92,9 +94,9 @@ const DatePickerModal: React.FC<DatePickerModalProps> = ({
         {/* Confirm Button */}
         <button
           onClick={onClose}
-          className="mt-4 w-[80%] bg-purple-500 text-white py-2 rounded-[15px] mx-10 "
+          className="mt-4 w-[80%] bg-purple-500 text-white py-2 rounded-[15px] mx-10 text-[13px] font-medium"
         >
-          დამახსოვრება
+          დამატება
         </button>
       </div>
     </div>

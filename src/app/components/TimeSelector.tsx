@@ -27,8 +27,8 @@ const TimeSelector: React.FC<{
               : "bg-white transition-colors duration-300 hover:bg-gray-200"
           }`}
         >
-          <p>{time.time}</p>
-          <p className="text-[14px]">{time.date}</p>
+          <p className="font-semibold text-[12px]">{time.time}</p>
+          <p className="text-[14px] text-gray-500 text-[12px]">{time.date}</p>
         </button>
       ))}
     </div>

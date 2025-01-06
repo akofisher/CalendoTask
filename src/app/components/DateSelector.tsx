@@ -23,8 +23,8 @@ const DateSelector: React.FC<{
               : "bg-gray-100 transition-colors duration-300 hover:bg-gray-200"
           }`}
         >
-          <p>{date.day}</p>
-          <p>{date.time}</p>
+          <p className="font-semibold text-[12px]">{date.day}</p>
+          <p className="font-semibold text-[14px]">{date.time}</p>
         </button>
       ))}
     </div>

@@ -9,7 +9,7 @@ import DatePickerModal from "./components/DatePickerModal";
 import { useRouter } from "next/navigation";
 
 export default function Home() {
-  const [step, setStep] = useState<number>(3); // Current step
+  const [step, setStep] = useState<number>(3);
   const [selectedDate, setSelectedDate] = useState<string>("");
   const [selectedTime, setSelectedTime] = useState<string>("");
   const [isDatePickerOpen, setIsDatePickerOpen] = useState<boolean>(false);
@@ -108,9 +108,9 @@ export default function Home() {
 
       {/* Date Selector */}
       <div className="px-4 pt-10">
-        <h2 className="text-lg font-semibold mt-4 text-[35px]">აირჩიე დრო</h2>
+        <h2 className="text-lg font-semibold mt-4 text-[24px]">აირჩიე დრო</h2>
         <div className="flex justify-between py-5">
-          <h2 className="text-lg font-semiregular mt-4">
+          <h2 className="text-lg font-normal mt-4 text-[15px]">
             აირჩიე სასურველი თარიღი
           </h2>
           <button
@@ -125,7 +125,7 @@ export default function Home() {
 
       {/* Time Selector */}
       <div className="px-4 min-h-[350px]">
-        <h2 className="text-lg font-semibold mt-4">აირჩიე საათი</h2>
+        <h2 className="text-lg font-normal text-[15px] mt-4">აირჩიე საათი</h2>
         <TimeSelector
           times={times}
           onSelect={(time: any) => setSelectedTime(time.time)}
@@ -133,7 +133,7 @@ export default function Home() {
       </div>
       <button
         onClick={() => route.push("/about")}
-        className=" mb-10 w-[80%] bg-purple-500 text-white py-2 rounded-[15px] mx-auto"
+        className=" mb-10 w-[80%] bg-purple-500 text-white py-2 rounded-[15px] mx-auto text-[14px] font-medium"
       >
         გაგრძელება
       </button>
