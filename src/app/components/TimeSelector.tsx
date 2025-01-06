@@ -28,7 +28,7 @@ const TimeSelector: React.FC<{
           }`}
         >
           <p className="font-semibold text-[12px]">{time.time}</p>
-          <p className="text-[14px] text-gray-500 text-[10px]">{time.date}</p>
+          <p className=" text-gray-500 text-[10px]">{time.date}</p>
         </button>
       ))}
     </div>
